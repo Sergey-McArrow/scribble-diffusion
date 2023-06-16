@@ -1,76 +1,9 @@
-import Link from "next/link";
-
 export default function Footer({ events }) {
-  return (
-    <footer className="w-full my-8">
-      <div className="text-center lil-text mt-8">
-        <div className="inline-block py-3 px-4 border bg-gray-200 rounded-lg">
-          🍿 Want to build an app like this?{" "}
-          <Link
-            href="https://github.com/replicate/scribble-diffusion"
-            target="_blank"
-          >
-            Fork it on GitHub
-          </Link>{" "}
-          or check out the{" "}
-          <Link href="https://youtu.be/6z07OdbrWOs" target="_blank">
-            video tutorial
-          </Link>
-          .
-        </div>
-      </div>
-
-      <div className="text-center text-sm mt-8">
-        <div className="inline-block py-3 px-4 border border-red-200 bg-red-100 text-orange-900 rounded-lg">
-          🔥 Scribbling now{" "}
-          <Link
-            href="https://scribblediffusion.com/scribbles/onyckvbesfespbtkaz2j2atnou"
-            target="_blank"
-            className="text-orange-900 underline"
-          >
-            works on Firefox
-          </Link>{" "}
-          thanks to{" "}
-          <Link
-            href="https://github.com/replicate/scribble-diffusion/issues/31#issuecomment-1451288647"
-            target="_blank"
-            className="text-orange-900 underline"
-          >
-            @scsmash3r
-          </Link>
-          !
-        </div>
-      </div>
-
-      <div className="text-center lil-text mt-8">
-        Powered by{" "}
-        <Link href="https://github.com/lllyasviel/ControlNet" target="_blank">
-          ControlNet
-        </Link>{" "}
-        by{" "}
-        <Link
-          href="https://lllyasviel.github.io/Style2PaintsResearch/lvmin"
-          target="_blank"
-        >
-          Lyumin Zhang
-        </Link>
-        ,{" "}
-        <Link
-          href="https://replicate.com/jagilley/controlnet-scribble?utm_source=project&utm_campaign=scribblediffusion"
-          target="_blank"
-        >
-          Replicate
-        </Link>
-        ,{" "}
-        <Link href="https://vercel.com/templates/ai" target="_blank">
-          Vercel
-        </Link>
-        , and{" "}
-        <Link href="https://upload.io" target="_blank">
-          Upload
-        </Link>
-        .
-      </div>
-    </footer>
-  );
+	return (
+		<footer className='flex flex-col items-center justify-center gap-2 text-gray-500 py-5'>
+			<h5>That`s all Folks</h5>
+			<p>Made by S.McArrow just for fun</p>
+			<p>© {new Date().getFullYear()} All rights reserved</p>
+		</footer>
+	)
 }
